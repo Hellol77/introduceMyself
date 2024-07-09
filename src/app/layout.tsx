@@ -1,8 +1,6 @@
-"use client";
-
 import MobileBan from "@/components/MobileBan";
 import "../styles/globals.css";
-import IntroMotion from "@/components/IntroMotion";
+import dynamic from "next/dynamic";
 
 export default function RootLayout({
   children,
@@ -11,13 +9,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="bg-[#ffffff] text-[#030303]">
+      <body className="bg-[#ffffff] text-[#030303] relative">
         <MobileBan />
-        <IntroMotion>
-          <section className="mx-auto flex-shrink float-none inset-0 relative w-[1200px]">
+        {/* <IntroMotion /> */}
+        <section className="mx-auto flex-shrink float-none inset-0 relative w-[1200px] h-[3600px]">
+          <div className="relative flex flex-col items-center  w-full h-screen">
             {children}
-          </section>
-        </IntroMotion>
+          </div>
+        </section>
       </body>
     </html>
   );
