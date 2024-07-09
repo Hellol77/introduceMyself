@@ -1,3 +1,6 @@
+import BestExperience from "@/components/BestExperience";
+import EuropeTravel from "@/components/EuropeTravel";
+import Hobby from "@/components/hobby/Hobby";
 import Intro from "@/components/Intro";
 import Major from "@/components/Major";
 import MBTI from "@/components/MBTI";
@@ -11,6 +14,9 @@ export default function Home() {
       <Intro />
       <Major />
       <MBTI />
+      <BestExperience />
+      <EuropeTravel />
+      <Hobby />
     </main>
   );
 }

@@ -12,7 +12,7 @@ export default function RootLayout({
       <body className="bg-[#ffffff] text-[#030303] relative">
         <MobileBan />
         {/* <IntroMotion /> */}
-        <section className="mx-auto flex-shrink float-none inset-0 relative w-[1200px] h-[3600px]">
+        <section className="mx-auto flex-shrink float-none inset-0 relative w-[1200px] h-full">
           <div className="relative flex flex-col items-center  w-full h-screen">
             {children}
           </div>

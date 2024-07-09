@@ -3,13 +3,13 @@
 import { useInView } from "framer-motion";
 import React, { useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
-import EaseInOutText from "@/components/ui/EaseInOutText";
+import EaseInOut from "@/components/ui/EaseInOut";
 export default function MBTI() {
   const ref = useRef(null);
   const inView = useInView(ref);
   return (
-    <div ref={ref} className="flex justify-start w-full h-56 ml-48">
-      <EaseInOutText>
+    <div ref={ref} className="flex justify-start w-full h-40 ml-48">
+      <EaseInOut>
         MBTI는{" "}
         {inView && (
           <TypeAnimation
@@ -18,7 +18,7 @@ export default function MBTI() {
             style={{ whiteSpace: "pre-line" }}
           />
         )}
-      </EaseInOutText>
+      </EaseInOut>
     </div>
   );
 }

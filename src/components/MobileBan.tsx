@@ -4,7 +4,7 @@ import Character from "../../public/character.png";
 
 export default function MobileBan() {
   return (
-    <div className="flex-col text-xl font-semibold absolute z-50 bg-white w-screen h-screen md:hidden items-center flex pt-52 gap-10">
+    <div className="fixed flex-col text-xl font-semibold  z-50 bg-white w-screen h-screen overflow-hidden md:hidden items-center flex pt-52 gap-10">
       <Image
         src={Character}
         alt="character"
@@ -12,7 +12,7 @@ export default function MobileBan() {
         height={150}
         className="w-32 h-32 "
       />
-      모바일을 지원하지 않아요. 미안해요..!
+      작은 화면을 지원하지 않아요. 미안해요..!
     </div>
   );
 }
