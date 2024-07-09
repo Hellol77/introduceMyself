@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Hobby() {
   return (
-    <TextContainer className="flex-col items-center justify-center h-96 gap-24">
+    <TextContainer className="flex-col items-center justify-center h-screen gap-24">
       <EaseInOutText>취미는?</EaseInOutText>
       <EaseInOutText>
         취준 이후로 못하고 있지만 복싱, 드럼이었어요.

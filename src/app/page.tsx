@@ -4,6 +4,7 @@ import Hobby from "@/components/hobby/Hobby";
 import Intro from "@/components/Intro";
 import Major from "@/components/Major";
 import MBTI from "@/components/MBTI";
+import Plan from "@/components/plan/Plan";
 import { Pretendard } from "@/styles/fonts/font";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <BestExperience />
       <EuropeTravel />
       <Hobby />
+      <Plan />
     </main>
   );
 }

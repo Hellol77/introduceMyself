@@ -8,17 +8,8 @@ export default function MBTI() {
   const ref = useRef(null);
   const inView = useInView(ref);
   return (
-    <div ref={ref} className="flex justify-start w-full h-40 ml-48">
-      <EaseInOut>
-        MBTI는{" "}
-        {inView && (
-          <TypeAnimation
-            sequence={["ISFP"]}
-            speed={1}
-            style={{ whiteSpace: "pre-line" }}
-          />
-        )}
-      </EaseInOut>
+    <div className="flex justify-start w-full h-fit ml-48">
+      <EaseInOut duration={1.5}>MBTI는 ISFP 입니다.</EaseInOut>
     </div>
   );
 }
